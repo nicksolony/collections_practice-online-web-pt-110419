@@ -24,10 +24,12 @@ end
 
 
 def reverse_array(array)
-  array.each
+  array.reverse
 end
 
 
 def kesha_maker(array)
-  array.reverse
+  array.each do |word|
+    new_word = word.string_to_a
+  end
 end
