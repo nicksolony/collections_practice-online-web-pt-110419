@@ -29,10 +29,11 @@ end
 
 
 def kesha_maker(array)
-  array.each do |word|
+  
+  array.each_with_index do |word,i|
     new_word = word.split('')
     new_word[2] = "$"
-    word = new_word.join('')
+    word [i] = new_word.join('')
   end
   array
 end
