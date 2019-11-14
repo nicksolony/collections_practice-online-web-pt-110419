@@ -18,9 +18,7 @@ end
 
 
 def swap_elements_from_to(array,x,y)
-  temp = array [x-1]
-  array[x-1] = array [y-1]
-  array [y-1] = temp
+  array[x-1], array [y-1] = array[y-1], array [x-1]
   array
 end
 
