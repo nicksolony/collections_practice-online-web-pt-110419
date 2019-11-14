@@ -22,3 +22,8 @@ def swap_elements_from_to(array,x,y)
   array [y-1] = temp
   array
 end
+
+
+def swap_elements(array)
+  array.sort {|a,b| a[1]<=>b[2]}
+end
